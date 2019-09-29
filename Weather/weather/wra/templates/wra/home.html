@@ -2,8 +2,32 @@
 
 {% block content %}
 
+<br>
 
-<h2>Thi  is home page weather report</h2>
+
+
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h2 class="display-4" class="text-primary" font = "10" >Weather Update</h2>
+      <br>
+      <br>
+    <p class="lead"> {{ API.sys.country }} {{ API.name }} ,
+                        Min ={{API.main.temp_min}} ,Max= {{API.main.temp_max}}
+                         </p>
+
+      <p> Overcast Condition ={{ API.weather.0.main}}</p>
+      <p> Rain percentage = {{ API.main.humidity }}%</p>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+</br>
 
 
 
